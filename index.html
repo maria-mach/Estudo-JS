@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/‫iconejjk.webp" type="image/x-icon">
+    <link rel="stylesheet" href="estilos/style.css">
+    <script src="./script/infos.js" defer></script>
+    <script src="./script/script.js" defer></script>
+    <title>Jujutsu Kaisen</title>
+</head>
+<body>
+
+    <header>
+        <a href="#"><img src="imagens/logovermei.png" alt="Ícone do logo Jujutsu" id="header_img"></a>
+        <nav>
+            <ul>
+                <li><a href="#" class="nav_texto">Sobre</a></li>
+                <li><a href="#perso" class="nav_texto">Personagens</a></li>
+                <li><a href="#clas" class="nav_texto">Clãs</a></li>
+                <li><a href="#p-selecao" class="nav_texto">Conteúdos</a></li>
+            </ul>
+            <button class="menu_mobile" id="menu_mobile">&#9776;</button>
+
+        </nav>
+    </header>
+
+    <main>
+        <section id="universo">
+            <div class="universo">
+                <div class="img-uni">
+                    <img id="imagem-universo" src="" alt="" title="">
+                </div>
+                <div class="texto-uni">
+                    <h2>Universo</h2>
+                    <!-- Tópicos interativos -->
+                    <div class="topicos">
+                        <div class="topico ativo">Sinopse</div>
+                        <div class="topico">Feiticeiros</div>
+                        <div class="topico">Maldições</div>
+                    </div>
+
+                    <div class="conteudo">
+                        <p id="conteudo-p"></p>
+                    </div>
+                    <!-- Fim dos tópicos interativos -->
+                </div>
+            </div>
+        </section>
+
+        <section id="perso">
+            <div class="item_seta">
+                <img src="imagens/ant1.png" alt="Anterior" id="card_ant" />
+            </div>
+            <table>
+                <tr>
+                    <th rowspan="4">
+                        <a href="" target="_blank" id="link_img">
+                            <img id="img-tb" src="" alt="" title="">
+                        </a>    
+                    </th>
+                    <th colspan="2" id="name"></th>
+                </tr>
+                <tr>
+                    <th>Idade:</th>
+                    <td id="idade">
+                    </td>
+                </tr>
+                <tr>
+                    <th>Espécie:</th>
+                    <td id="especie"></td>
+                </tr>
+                <tr>
+                    <th>Gênero:</th>
+                    <td id="genero"></td>
+                </tr>
+                <tr>
+                    <th>Físico:</th>
+                    <td colspan="2" id="fis">
+                    </td>
+                </tr>
+                <tr>
+                    <th>Personalidade:</th>
+                    <td colspan="2" id="persin">
+                    </td>
+                </tr>
+            </table>
+            <div class="item_seta">
+                <img src="imagens/prox1.png" alt="Próximo" id="card_prox" />
+            </div>
+        </section>
+
+
+        <section id="clas">
+            <h2>Clãs de Jujutsu</h2>
+            <div class="div_clas">
+                <figure class="img_clas">
+                    <img src="imagens/cla_nori.jpg" alt="">
+                    <figcaption>Kamo</figcaption>
+                </figure>
+                <figure class="img_clas">
+                    <img  src="imagens/cla_zenin.avif" alt="">
+                    <figcaption>Zenin</figcaption>
+                </figure>
+                <figure class="img_clas">
+                    <img src="imagens/cla_gojo.avif" alt="">
+                    <figcaption>Gojo</figcaption>
+                </figure>
+            </div>
+            <!-- explicação do cla -->
+            <p id="p_clas" ></p>
+        </section>
+
+        <section id="p-selecao">
+            <h2>Selecione um Personagem</h2>
+
+            <div class="personagem">
+                <button data-personagem="toji">Toji</button>
+                <button data-personagem="sukuna">Sukuna</button>
+                <button data-personagem="gojo">Gojo</button>
+            </div>
+
+            <div id="personagem-conteudo">
+                <h3 id="nome-personagem"></h3>
+                <div id="video-apresentacao">
+                    <h4>Vídeo de Apresentação</h4>
+                    <video id="video" controls autoplay loop>
+                        <source id="video-src" src="" type="video/mp4">
+                        Seu navegador não suporta o elemento de vídeo.
+                    </video>
+                </div>
+                <div id="audio-dublador">
+                    <h4>Áudio do Dublador</h4>
+                    <audio id="audio" controls>
+                        Seu navegador não suporta o elemento de áudio.
+                    </audio>
+                </div>
+            </div>
+
+            <div id="formulario">
+                <h3>Formulário de Comentários</h3>
+                <form id="comentario-form">
+                    <label for="nome">Seu Nome:</label>
+                    <input type="text" id="nome" name="nome" required>
+                    <label for="comentario">Comentário:</label>
+                    <textarea id="comentario" name="comentario" required></textarea>
+                    <button id="botao-enviar" type="submit">Enviar</button>
+                </form>
+            </div>
+        </section>    
+        
+        <footer id="rodape">
+            <p>&copy; 2024 Todos os direitos reservados.</p>
+            <p>Dúvidas contate o suporte.</p>
+        </footer>
+
+    </main>
+</body>
+
+</html>
